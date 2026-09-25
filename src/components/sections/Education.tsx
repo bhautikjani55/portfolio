@@ -4,8 +4,8 @@ import { SectionHeading } from "@/components/ui";
 
 export function Education() {
   return (
-    <section id="education" aria-label="Education" className="relative py-14 lg:py-20">
-      <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
+    <section aria-label="Education" className="relative py-14 lg:py-20">
+      <div id="education" className="mx-auto max-w-[1400px] scroll-mt-20 px-5 sm:px-8">
         <SectionHeading index="06" eyebrow="Education" title={<>Foundations.</>} />
         <Reveal delay={0.08} className="mt-8">
           <div className="flex flex-col gap-2 border-y border-[#181713]/15 py-6 sm:flex-row sm:items-baseline sm:justify-between">

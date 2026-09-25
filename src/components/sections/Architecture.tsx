@@ -4,9 +4,10 @@ import { SectionHeading } from "@/components/ui";
 
 export function Architecture() {
   return (
-    <section id="systems" aria-label="How I think about systems" className="relative py-14 lg:py-20">
+    <section aria-label="How I think about systems" className="relative py-14 lg:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <div className="border-t border-[#181713]/15 pt-10 lg:pt-14">
+          <div id="systems" className="scroll-mt-20">
           <SectionHeading
             index="05"
             eyebrow="Approach"
@@ -43,6 +44,7 @@ export function Architecture() {
               </StaggerItem>
             ))}
           </Stagger>
+          </div>
         </div>
       </div>
     </section>

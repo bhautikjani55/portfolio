@@ -12,10 +12,11 @@ export function Experience() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="experience" className="relative py-14 lg:py-20">
+    <section className="relative py-14 lg:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <div className="border-t border-[#181713]/15 pt-10 lg:pt-14">
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <div id="experience" className="scroll-mt-20">
+            <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeading
               index="02"
               eyebrow="Experience"
@@ -83,6 +84,7 @@ export function Experience() {
                 </Reveal>
               );
             })}
+            </div>
           </div>
         </div>
       </div>

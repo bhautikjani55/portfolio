@@ -4,9 +4,10 @@ import { SectionHeading } from "@/components/ui";
 
 export function Skills() {
   return (
-    <section id="skills" className="relative py-14 lg:py-20">
+    <section className="relative py-14 lg:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <div className="border-t border-[#181713]/15 pt-10 lg:pt-14">
+          <div id="skills" className="scroll-mt-20">
           <SectionHeading
             index="04"
             eyebrow="Tools"
@@ -39,6 +40,7 @@ export function Skills() {
                 </div>
               </Reveal>
             ))}
+          </div>
           </div>
         </div>
       </div>
