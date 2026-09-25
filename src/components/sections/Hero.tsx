@@ -139,7 +139,7 @@ export function Hero() {
       {/* giant outline watermark */}
       <div aria-hidden className="pointer-events-none relative select-none overflow-hidden">
         <p className="text-outline display-tight -mb-[4vw] whitespace-nowrap text-center text-[21vw] font-black leading-none">
-          bhautik/jani
+          bhautik
         </p>
       </div>
     </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { MapPin, Minus, Plus } from "lucide-react";
+import { ArrowUpRight, MapPin, Minus, Plus } from "lucide-react";
 import { useState } from "react";
 import { EXPERIENCE } from "@/data/portfolio";
 import { Reveal } from "@/components/motion";
@@ -25,9 +25,17 @@ export function Experience() {
               <div className="max-w-sm border border-[#181713]/20 bg-[#f2eee4] p-5">
                 <p className="font-mono2 text-[11px] uppercase tracking-[0.18em] text-[#6f6a5c]">{EXPERIENCE.duration}</p>
                 <p className="mt-2 text-lg font-extrabold leading-snug">{EXPERIENCE.role}</p>
-                <p className="mt-1 text-[13.5px] font-medium">{EXPERIENCE.company}</p>
-                <p className="font-mono2 mt-2 inline-flex items-center gap-1 text-[11.5px] text-[#6f6a5c]">
-                  <MapPin size={11} /> {EXPERIENCE.location}
+                <a
+                  href={EXPERIENCE.website}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group mt-1 inline-flex items-center gap-1 text-[13.5px] font-medium underline decoration-[#181713]/30 underline-offset-4 transition hover:text-[#e4572e] hover:decoration-[#e4572e]"
+                >
+                  {EXPERIENCE.company}
+                  <ArrowUpRight size={14} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden />
+                </a>
+                <p className="font-mono2 mt-2 flex items-start gap-1.5 text-[11.5px] leading-relaxed text-[#6f6a5c]">
+                  <MapPin size={11} className="mt-1 shrink-0" /> {EXPERIENCE.address}
                 </p>
               </div>
             </Reveal>

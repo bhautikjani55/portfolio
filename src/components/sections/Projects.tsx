@@ -3,12 +3,18 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { PROJECTS, type Project } from "@/data/portfolio";
 import { Reveal } from "@/components/motion";
 import { SectionHeading, Tag } from "@/components/ui";
 
 export function Projects() {
   const [selected, setSelected] = useState<Project | null>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setSelected(null);
@@ -81,8 +87,10 @@ export function Projects() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {selected && (
+      {mounted &&
+        createPortal(
+          <AnimatePresence>
+            {selected && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -168,8 +176,10 @@ export function Projects() {
               </div>
             </motion.div>
           </motion.div>
+            )}
+          </AnimatePresence>,
+          document.body
         )}
-      </AnimatePresence>
 
       <style>{`.modal-h{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.2em;color:#e4572e}.modal-p{margin-top:0.75rem;font-size:14px;line-height:1.7;color:#3d3a32}`}</style>
     </section>

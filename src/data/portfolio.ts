@@ -9,8 +9,8 @@ export const PROFILE = {
   email: "bhautikjani.ce@gmail.com",
   availability: "Available for Full-Stack Opportunities",
   socials: {
-    github: "https://github.com/bhautikjani",
-    linkedin: "https://www.linkedin.com/in/bhautikjani",
+    github: "https://github.com/bhautikjani55",
+    linkedin: "https://www.linkedin.com/in/bhautik-jani-097548212",
   },
 } as const;
 
@@ -34,8 +34,10 @@ export type Achievement = { title: string; detail: string };
 
 export const EXPERIENCE = {
   company: "LA NET TEAM Software Solution PVT. LTD",
+  website: "https://www.lanetteam.com/",
   role: "Full-Stack Software Engineer",
   location: "Surat, Gujarat, India",
+  address: "406, Luxuria Business Hub, Near VR Mall, Surat, Gujarat 395007",
   duration: "January 2023 – Present",
   summary:
     "Owning full-stack delivery across SaaS, marketplace and healthcare products — from React frontends to serverless AWS backends.",

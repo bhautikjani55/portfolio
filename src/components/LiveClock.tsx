@@ -21,14 +21,26 @@ function parts(now: Date) {
 }
 
 export function LiveClock({ compact = false }: { compact?: boolean }) {
-  const [now, setNow] = useState(() => new Date());
+  const [now, setNow] = useState<Date | null>(null);
   useEffect(() => {
+    setNow(new Date());
     const id = setInterval(() => setNow(new Date()), 1000);
     return () => clearInterval(id);
   }, []);
+  if (!now) {
+    return (
+      <span className="font-mono2 whitespace-nowrap text-[11px] tracking-wide text-[#181713]" aria-hidden>
+        IST / --:--:-- {compact ? null : <span className="ml-3 hidden sm:inline">···</span>}
+      </span>
+    );
+  }
   const { time, date } = parts(now);
   return (
-    <span className="font-mono2 whitespace-nowrap text-[11px] tracking-wide text-[#181713]" aria-label={`Current time in India: ${time}, ${date}`}>
+    <span
+      suppressHydrationWarning
+      className="font-mono2 whitespace-nowrap text-[11px] tracking-wide text-[#181713]"
+      aria-label={`Current time in India: ${time}, ${date}`}
+    >
       IST / {time}
       {!compact && <span className="ml-3 hidden sm:inline">{date}</span>}
     </span>
