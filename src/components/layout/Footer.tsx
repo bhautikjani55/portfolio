@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-[#181713]/15">
       <div className="mx-auto flex max-w-[1400px] flex-col gap-4 px-5 py-6 sm:flex-row sm:items-center sm:justify-between sm:px-8">
         <p className="font-mono2 text-[11.5px] text-[#6f6a5c]">
-          © 2026, <span className="font-semibold text-[#e4572e]">bhautik/jni.</span> Built with Next.js & curiosity.
+          © 2026, <span className="font-semibold text-[#e4572e]">bhautik/jani.</span> Built with Next.js & curiosity.
         </p>
         <div className="flex items-center gap-4">
           <LiveClock compact />

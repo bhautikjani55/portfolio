@@ -46,7 +46,7 @@ export function TopBar() {
           )}
         >
           <a href="#home" className="text-[19px] font-extrabold tracking-tight text-[#181713]" aria-label="Bhautik Jani — home">
-            bhautik<span className="font-medium">/</span>jni
+            bhautik<span className="font-medium">/</span>jani
           </a>
 
           <label className="hidden max-w-xs flex-1 items-center md:flex" aria-label="Tell me your name">
@@ -91,7 +91,7 @@ export function TopBar() {
             aria-label="Site menu"
           >
             <div className="flex h-16 items-center justify-between px-5">
-              <span className="text-[19px] font-extrabold tracking-tight">bhautik<span className="font-medium">/</span>jni</span>
+              <span className="text-[19px] font-extrabold tracking-tight">bhautik<span className="font-medium">/</span>jani</span>
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close menu"

@@ -13,7 +13,7 @@ const LAYERS = [
 
 export function About() {
   return (
-    <section id="about" className="relative py-20 lg:py-28">
+    <section id="about" className="relative py-14 lg:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionHeading
           index="01"

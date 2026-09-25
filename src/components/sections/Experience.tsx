@@ -12,9 +12,9 @@ export function Experience() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="experience" className="relative py-20 lg:py-28">
+    <section id="experience" className="relative py-14 lg:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <div className="border-t border-[#181713]/15 pt-14 lg:pt-20">
+        <div className="border-t border-[#181713]/15 pt-10 lg:pt-14">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeading
               index="02"

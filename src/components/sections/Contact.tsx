@@ -37,9 +37,9 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="relative overflow-hidden py-20 lg:py-28">
+    <section id="contact" className="relative overflow-hidden py-14 lg:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <div className="border-t border-[#181713]/15 pt-14 lg:pt-20">
+        <div className="border-t border-[#181713]/15 pt-10 lg:pt-14">
           <Reveal>
             <p className="label">
               <span className="mr-3 text-[#e4572e]">07</span>Contact

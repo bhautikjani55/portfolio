@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main id="main">
       <Hero />
-      <div className="pb-16 pt-4 lg:pb-20">
+      <div className="pb-14 pt-2 lg:pb-16">
         <HeroStats />
       </div>
       <About />

@@ -16,12 +16,12 @@ export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-16">
       <div className="relative mx-auto max-w-[1400px] px-5 sm:px-8">
-        <div className="grid gap-10 pt-10 sm:pt-14 lg:grid-cols-[110px_1fr] lg:gap-6 lg:pt-20">
+        <div className="grid gap-14 pt-8 sm:pt-12 lg:grid-cols-[130px_1fr] lg:gap-16 lg:pt-16">
           <motion.div
             initial={{ opacity: 0, x: -18 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease }}
-            className="hidden lg:block lg:pt-16"
+            className="hidden lg:block lg:pt-12"
           >
             <FolderRail />
           </motion.div>
@@ -42,7 +42,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 34 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.08, ease }}
-              className="display-tight mt-4 max-w-5xl text-[13.5vw] font-extrabold tracking-tight text-[#181713] sm:text-7xl lg:text-[6.2rem]"
+              className="display-tight mt-8 max-w-5xl text-[13.5vw] font-extrabold tracking-tight text-[#181713] sm:text-7xl lg:text-[6.2rem]"
             >
               I am Bhautik,
               <br />
@@ -139,7 +139,7 @@ export function Hero() {
       {/* giant outline watermark */}
       <div aria-hidden className="pointer-events-none relative select-none overflow-hidden">
         <p className="text-outline display-tight -mb-[4vw] whitespace-nowrap text-center text-[21vw] font-black leading-none">
-          bhautik/jni
+          bhautik/jani
         </p>
       </div>
     </section>

@@ -21,7 +21,7 @@ export function FolderRail({ vertical = true }: { vertical?: boolean }) {
     );
   }
   return (
-    <div className="flex flex-col gap-7" role="list" aria-label="Quick links">
+    <div className="flex flex-col gap-11" role="list" aria-label="Quick links">
       {FOLDERS.map((f) => (
         <a key={f.label} href={f.href} role="listitem" className="group flex w-20 flex-col items-center gap-1.5">
           <Folder

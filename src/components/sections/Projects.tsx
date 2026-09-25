@@ -24,9 +24,9 @@ export function Projects() {
   }, [selected]);
 
   return (
-    <section id="projects" className="relative py-20 lg:py-28">
+    <section id="projects" className="relative py-14 lg:py-20">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <div className="border-t border-[#181713]/15 pt-14 lg:pt-20">
+        <div className="border-t border-[#181713]/15 pt-10 lg:pt-14">
           <SectionHeading
             index="03"
             eyebrow="Selected work"
