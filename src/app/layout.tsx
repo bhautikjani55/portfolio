@@ -85,8 +85,8 @@ const structuredData = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${archivo.variable} ${jetbrainsMono.variable} h-full antialiased`}>
-      <body className="grain relative flex min-h-full flex-col bg-[#ece8dd] text-[#181713]">
+    <html lang="en" className={`${archivo.variable} ${jetbrainsMono.variable} h-full antialiased`} suppressHydrationWarning>
+      <body className="grain relative flex min-h-full flex-col bg-[#ece8dd] text-[#181713]" suppressHydrationWarning>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <a
           href="#main"
